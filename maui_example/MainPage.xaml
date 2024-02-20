@@ -12,10 +12,17 @@
         </chart:SfCartesianChart.BindingContext>
 
         <chart:ColumnSeries ItemsSource="{Binding Data}"
+                ShowDataLabels="True"
                 XBindingPath="Name"
-                YBindingPath="Height"></chart:ColumnSeries>
+                YBindingPath="Height"
+                Label="Height"></chart:ColumnSeries>
 
-        <chart:SfCartesianChart.XAxes>
+        <chart:SfCartesianChart.Legend>
+
+            <chart:ChartLegend/>
+        </chart:SfCartesianChart.Legend>
+
+            <chart:SfCartesianChart.XAxes>
             <chart:CategoryAxis>
                 <chart:CategoryAxis.Title>
                     <chart:ChartAxisTitle Text="Name"></chart:ChartAxisTitle>
